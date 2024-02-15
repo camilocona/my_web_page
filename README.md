@@ -304,6 +304,13 @@ Writing objects: 100% (3/3), 233 bytes | 77.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:camilocona/my_web_page.git
  * [new branch]      main -> main
-
+ * 
 Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
-$
+$ git clone git@github.com:camilocona/my_web_page.git
+Cloning into 'my_web_page'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), 5.38 KiB | 1.34 MiB/s, done.
+
