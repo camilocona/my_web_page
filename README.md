@@ -314,3 +314,128 @@ remote: Compressing objects: 100% (4/4), done.
 remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
 Receiving objects: 100% (6/6), 5.38 KiB | 1.34 MiB/s, done.
 
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 ~
+$ cd /c/Desarrllo_Web/my_web_page
+bash: cd: /c/Desarrllo_Web/my_web_page: No such file or directory
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 ~
+$ cd /c/Desarrollo_Web/my_web_page
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main|MERGING)
+$ ls
+README.md  aboutme.html  index.html  my_web_page/  styles/
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main|MERGING)
+$ git status
+On branch main
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   aboutme.html
+        new file:   styles/aboutme.css
+
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main|MERGING)
+$ git add aboutme.html
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main|MERGING)
+$ git commit -m "último cambio en aboutme.html"
+[main 0b75ea4] último cambio en aboutme.html
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 286 bytes | 95.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:camilocona/my_web_page.git
+   64c4b17..0b75ea4  main -> main
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git merge new_features
+Already up to date.
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git log
+commit 0b75ea4763170323437c491d62e4bb9531a67787 (HEAD -> main, origin/main)
+Merge: 64c4b17 2b48296
+Author: camilocona <camilocona2@gmail.com>
+Date:   Thu Feb 15 21:07:35 2024 -0500
+
+    último cambio en aboutme.html
+
+commit 2b48296cae28619d0f8b9de2548e8dbc147f4c2d (origin/new_features, new_features)
+Merge: f269d06 f79e770
+Author: camilocona <camilocona2@gmail.com>
+Date:   Thu Feb 15 20:14:31 2024 -0500
+
+    Merge branch 'new_features' of github.com:camilocona/my_web_page into new_features
+
+commit f269d06d4d1f846900c1c51816fd231abbd8669c
+Author: camilocona <camilocona2@gmail.com>
+Date:   Thu Feb 15 20:13:42 2024 -0500
+
+    Ultimos cambios a aboutme.html
+
+commit f79e7701fa6b9f104523ddf44196082c0e160611
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git brancj
+git: 'brancj' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git branch
+* main
+  new_features
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git merge new_features
+Already up to date.
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Camilo Anacona@LAPTOP-SD759LKP MINGW64 /c/Desarrollo_Web/my_web_page (main)
+$ git log
+commit 0b75ea4763170323437c491d62e4bb9531a67787 (HEAD -> main, origin/main)
+Merge: 64c4b17 2b48296
+Author: camilocona <camilocona2@gmail.com>
+Date:   Thu Feb 15 21:07:35 2024 -0500
+
+    último cambio en aboutme.html
+
+commit 2b48296cae28619d0f8b9de2548e8dbc147f4c2d (origin/new_features, new_features)
+Merge: f269d06 f79e770
+Author: camilocona <camilocona2@gmail.com>
+Date:   Thu Feb 15 20:14:31 2024 -0500
+
+    Merge branch 'new_features' of github.com:camilocona/my_web_page into new_features
+
+commit f269d06d4d1f846900c1c51816fd231abbd8669c
+Author: camilocona <camilocona2@gmail.com>
+Date:   Thu Feb 15 20:13:42 2024 -0500
+
+    Ultimos cambios a aboutme.html
+
+commit f79e7701fa6b9f104523ddf44196082c0e160611
+
+
